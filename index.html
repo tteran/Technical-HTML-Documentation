@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title> HTML Tech Doc </title>
+</head>
+
+<!-- Nav Bar Guide -->
+<div class="container">
+  <div class="navigation">
+<nav id="navbar">
+  <header class="HD">HTML Documentation</header>
+  <ul>
+    <a class="nav-link" href="#introduction" rel="internal">
+      <li class="active">Intro to HTML</li>
+    </a>
+    <a class="nav-link" href="#tags" rel="internal">
+      <li>Top Tags</li>
+    </a>
+    <a class="nav-link" href="#comments" rel="internal">
+      <li>Comment</li>
+    </a>
+    <a class="nav-link" href="#attributes" rel="internal">
+      <li>Attributes</li>
+    </a>
+    <a class="nav-link" href="#adding_images" rel="internal">
+      <li>Adding Images to Your Website</li>
+    </a>
+    <a class="nav-link" href="#f_text" rel="internal">
+      <li>Format Text</li>
+    </a>
+    <a class="nav-link" href="#create_list" rel="internal">
+      <li>Creating Lists</li>
+    </a>
+    <a class="nav-link" href="#b_elements" rel="internal">
+      <li>Block Elements</li>
+    </a>
+    <a class="nav-link" href="#nesting" rel="internal">
+      <li>Nesting</li>
+    </a>
+    <a class="nav-link" href="#b_form" rel="internal">
+      <li>Building a Form</li>
+    </a>
+    <a class="nav-link" href="#ref" rel="internal">
+      <li>Reference</li>
+    </a>
+  </ul>
+</nav>
+  </div>
+
+<!-- Main Document -->
+<div class="mainBody">
+<main id="main-doc">
+    <section class="main-section" id="introduction">
+        <header>Introduction to HTML</header>
+        <article>
+            <p>HTML or Hypertext Markup Language is the backbone of all websites. It provides the structure in which elements
+                of the page are styled and how the user will navigate through the website or app. </p>
+
+            <p> Every website follows a basic format which includes a header, a body and a footer. Even if you don't notice it
+                when you regularly use the web it is present and makes the experience enjoyable and easily interactive </p>
+
+            <p> Throughout this technical documentartion of HTML we will discuss several concepts including but not limited to:
+            tags, creating lists, and organizing your text code into compartments called divs. Let's get started! </p>
+        </article>
+    </section>
+    <section class="main-section" id="tags">
+        <header> Top Tags </header>
+        <article>
+            <p>Tags are what is used in HTML to help define what is actually going on with the test. Here I will list several
+                of the most common and most used tags that you can use to start building your very own website.</p>
+
+            <table>
+                <tr>
+                    <th>Code</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>
+                        <code> < !DOCTYPE html ></code> </td>
+                    <td>Ironically the first one is not a tag but must be included before everything else. It is an instruction
+                        to the web browser and tells it what version it is running.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>< html ></code>
+                    </td>
+                    <td>The first tag tells the browser page that it's running HTML</td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>< head ></code>
+                    </td>
+                    <td>The head tag contains information like scripts, styles and/or even a title for the page</td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>< title ></code>
+                    </td>
+                    <td>The title tag is required in all HTML and will display the title of the page in the browser window</td>
+                </tr>
+                <tr>
+                    <td>
+                        <code> < body > </code>
+                    </td>
+                    <td>The body tag will contain all of the elements in the actual html so all of the text, images, lists and
+                        so on</td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>< h1 > to < h6 ></code>
+                    </td>
+                    <td>Now we actually get to writing text for the page. These are heading tags. h1 by default being the biggest
+                        in text size all the way down to h6. These are helpful to oranize information.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>< p ></code>
+                    </td>
+                    <td>This tag denotes a paragraph for your text.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>< br ></code>
+                    </td>
+                    <td>Using this tag will add a break to your text since just hitting enter won't actually do anyhing</td>
+                </tr>
+                <tr>
+                    <td>
+                        <code> < hr ></code>
+                    </td>
+                    <td>This tag will add a horizontal line to your page and help to organize content.</td>
+                </tr>
+            </table>
+            <p>
+                It is
+                <strong>IMPORTANT</strong> to note that almost all tags (there are a few exceptions) need a closing tag. So for example
+                if you make a paragraph using
+                <code> < p > </code> you need to close the tag after your paragraph like this
+                <code> < /p > </code>
+            </p>
+        </article>
+    </section>
+
+    <section class="main-section" id="comments">
+        <header> Comment </header>
+        <article>
+            <p> Adding comments in your HTML is incredibly useful to yourself and other coders in the future who will be reading
+                your code. It allows you to type an instruction or a note in the code without affecting your actual HTML.</p>
+
+            <p> To do this you would type
+                <code> < !-- ... -- > </code>
+                <p> You can type this anywhere in the HTML whether it be before a div tag noting what the div is holding or you
+                    could add it after a hex code to show what it is representing. It is up to you how you want to add notes
+                    to your code but it is a very good habit to get into. </p>
+        </article>
+    </section>
+
+    <section class="main-section" id="attributes">
+        <header> Attributes </header>
+        <article>
+            <p> An attribute in HTML can do two things:
+                <ol>
+                    <li> Modifies default functionality of the element type </li>
+                    <li> Provides functionality to certain element types unable to function correctly without them </li>
+                </ol>
+                <p>
+                    Generally the syntax for attributes is as follows
+                    <code>< element attribute="value" > Content in the tag < /element > </code>
+                    <p>
+                        Some examples of attributes include:
+                        <ul>
+                            <li>
+                                <code> < src > </code> which stands for source. You'll use this and the link for an image you want to add.
+                            </li>
+                            <li>
+                                <code> < href > </code> will make text into a clickable link </li>
+                            <li>
+                                <code> < id > </code> gives an element a unique identification which becomes useful when you start using CSS
+                            </li>
+                            <li>
+                                <code> < class > </code> is another common attribute used in assisting your CSS code </li>
+                            <li>
+                                <code> < width > and < height > </code> are two attributes that do exactly what you think they do. Very useful in sizing images
+                                or other content. </li>
+                        </ul>
+    </section>
+    </article>
+
+    <section class="main-section" id="adding_images">
+        <header> Adding Images to Your Website </header>
+        <article>
+            <p> Images are a great way to make your website really stand out from the rest. From getting the pictures off the
+                internet, sizing them and even turning them into a link you can make your page stand out from the rest. </p>
+
+            <p> We talked earlier about tags and how they need to be closed. Well this tag is one of the exceptions. The img
+                tag does not need to be closed. It is referred to as self-closing. </p>
+            <p> The common syntax for adding an image </p>
+            <code> < img src= " " > </code>
+            <p> Now there are many things you can do with said image once you've got it on your page. You can control the height
+                and width using the attributes we went over earlier in the last section </p>
+            <code> height = "100px" width = "100px" </code>
+            <p> This will make your image 100 pixels tall by 100 pixels wide. </p>
+            <p> Another cool thing you can do is turn your image into a link like this </p>
+            <code> < a href = "Linktopicture" > </code>
+            <p> And once you have your link you put the a tag around the image tag so once you have all of the subsequent images
+                in place it will look like this </p>
+            <code> < a href = "link" > 
+                  <br> 
+                  < img src="picture-link" width = "100px" height = "10px" > 
+                  <br> < / a > 
+                  </code>
+            <p> These are just some of the basics when it comes to images. It is up to YOU what images you want to use and how
+                you want to style them. </p>
+            <p>
+                <strong>NOTE:</strong> If for some reason your picture won't load it is always recommended you include an alt attribute
+                at the end of the picture with a short description of what it is. So for example if I linked a picture of
+                a child holdin a ballon and it didn't load my alt attribute would take it's place in plain text. </p>
+        </article> 
+    </section>
+
+        <section class="main-section" id="f_text">
+            <header> Format Text </header>
+            <article>
+                <p> You may find it useful to format your text when you want to make something bold or italic. Thankfully, there
+                    are some really simple and helpful tags to help make certain words stand out from the rest. </p>
+                <ul>
+                    <li>
+                        <code> < strong > </code> makes your text look important </li>
+                    <li>
+                        <code> < i > </code> will give the text an italic style </li>
+                    <li>
+                        <code> < mark > </code> will highlight text for you </li>
+                </ul>
+                <p> Proper syntax for formatting text is nesting the word inside the tag. It will look something like this
+                </p>
+                <code> < b > This text will be bold < / b > </code>
+                  <p> And that works for any of the format tags. You can even nest a formatted text within another tag.
+                  </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="create_list">
+            <header> Creating Lists </header>
+            <article>
+                <p> If you couldn't tell from this Technical Document page I love lists and you will too once you know how to
+                    create them in HTML. There are two different kinds of lists </p>
+                <ol>
+                    <li> Ordered Lists </li>
+                    <li> Unordered Lists </li>
+                </ol>
+                <p> Ordered lists will have a number next to them and unordered will have a dot. You can always go to CSS and
+                    format the numbers and dots how you want but for now we will just stick to making the default lists.
+                    </p>
+                <p> To make the list you use this block of code </p>
+                <code> < ol > <br>
+                      < li > List Item #1 < /li > <br>
+                      < li > List Item #2 < /li > <br> 
+                      < li > List Item #3 < /li > <br>
+                        < /ol > </code>
+                <p> So as you can see there's a couple different things we have going on here. First, we open up our ordered
+                    list tag. Second, we have our list items in the opening and closing li tags. Finally, we have to close
+                    the ordered list tag. If you wanted an unordered list you would just use </p>
+                <code> < ul > < /ul > </code>
+                <p> But still use the same li tags in the list to actually create the list. </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="b_elements">
+            <header> Block Elements </header>
+            <article>
+                <p> It is very important to organize in your HTML because once you introduce CSS and JavaScript you will start
+                    to run into conflicting id's and classes. Adding block elements or the div tag gives your page:
+                    <ul>
+                        <li>more structure and organization </li>
+                        <li> a container to style CSS or perform certain tasks with JavaScript </li>
+
+                    </ul>
+                </p>
+                <p> Div tags work like this </p>
+                <code> < div > < / div > </code>
+                </p> And you can put content inside the div tags like a heading or an image for example. </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="nesting">
+            <header> Nesting </header>
+            <article>
+                <p> Nesting elements becomes very important when you want to put similar information together all in one container
+                    or div. Doing this allows you to keep your HTML looking tight and organized. </p>
+                <p> To nest items it looks like this. </p>
+                <code> < div > <br>
+                      < h1 > Hello World < /h1 > <br>
+                        < p > This is a paragraph < /p > <br>
+                          < /div >
+                            </code>
+                <p> So basically you can put as many elements as you want into a single div and then they will be considered
+                    nested! </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="b_form">
+            <header> Building a Form </header>
+            <article>
+                <p> By building a form with just HTML you open up the option for the user to input any information (usernames,
+                    passwords, email) and have that information sent to your database. Let me show you how in a couple of
+                    quick steps </p>
+                <p> First you want to make the form </p>
+                <code> < form action="/url-where-you-want-to-submit-form-data" > < /form > </code>
+                <p> Then you want to add a button so your user can submit their information to you </p>
+                <code> < button type="submit">this button submits the form < /button > </code>
+                <p> And when you put it all together with the text field nested in the form element you will have something that
+                    looks like this </p>
+                <code> < form action="/submit-name" > <br>
+                < input type="text" placeholder="Your Name Here" > <br>
+                < button type="submit" > Submit < /button > <br>
+              < /form >
+                </code>
+                <p> And now you have yourself an element where a user can enter their name or anything. The placeholder will
+                    give the form a pre-set text so it gives your user some idea of where to put the information and in what
+                    way. You're totally in control!
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="ref">
+            <header> Reference </header>
+            <article>
+                <p> Here is what I referenced for help with this HTML documentation page. </p>
+                <a href="https://www.w3schools.com/html/default.asp" target="blank">W3 Schools</a>
+                <br>
+                <a href="https://www.freecodecamp.org/" target="blank"> freeCodeCamp </a>
+            </article>
+        </section>
+</main>
+                  </div>
+                  </div>
+</html>
