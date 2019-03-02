@@ -7,9 +7,10 @@ freeCodeCamp's web design project
 * Included basic static web site components: side nav bar, footer, header, and internal links.
 * Included media queries in the CSS to make page responsive.
 
-## Languages Used 
+## IDE and Languages Used 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/whatsnew/)
 
 ## Inspiration and Motvation
 * Preparing myself for Tech Elevator bootcamp
